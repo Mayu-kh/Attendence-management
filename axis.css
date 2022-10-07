@@ -27,5 +27,6 @@
 }
 
 #index-gallery {
-    width: 465px;
+    width: fit-content;
+    margin: auto;
 }
