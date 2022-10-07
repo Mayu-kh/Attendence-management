@@ -1,0 +1,32 @@
+.system {
+    font-size: 20px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.role {
+    margin: auto;
+    display: inline;
+    padding-top: 20px;
+}
+
+.some {
+    display: inline;
+    width: fit-content;
+    margin: auto;
+}
+
+.none {
+    width: min-content;
+}
+
+
+/* #student {
+    width: 10%;
+    height: 10%;
+}
+
+#faculty {
+    width: 10%;
+    height: 10%;
+} */
