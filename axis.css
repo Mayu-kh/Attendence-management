@@ -16,17 +16,16 @@
     margin: auto;
 }
 
-.none {
-    width: min-content;
+.item {
+    width: 200px;
+    text-align: center;
+    display: block;
+    background-color: transparent;
+    border: 1px solid transparent;
+    margin-right: 10px;
+    float: left;
 }
 
-
-/* #student {
-    width: 10%;
-    height: 10%;
+#index-gallery {
+    width: 465px;
 }
-
-#faculty {
-    width: 10%;
-    height: 10%;
-} */
