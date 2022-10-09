@@ -40,6 +40,11 @@
     display: inline;
     padding-top: 20px;
 }
+.role span{
+  color: #000;
+  
+
+}
 
 .some {
     display: inline;
