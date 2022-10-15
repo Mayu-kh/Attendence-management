@@ -32,3 +32,16 @@ const container = document.querySelector(".container"),
     login.addEventListener("click", ( )=>{
         container.classList.remove("active");
     });
+function validate(){
+    let username=document.getElementById('username').value;
+    let password=document.getElementById('password').value;
+    
+if(username=='mayu@gmail.com' && password =='mayu123')
+{
+    alert('Login Successful!!');
+    window.location.href='third.html';
+}else{
+    alert('Login Alert!!');
+}
+
+}
