@@ -1,0 +1,76 @@
+body{
+    background-color: rgba(30, 205, 232, 0.694);
+}
+.axis{
+    left:20px;
+    font-size: 35px;
+    font-weight: 800;
+    padding: 80px;
+}
+.a{
+    position: relative;
+    left: 150px;
+    font-size: 90px;
+    padding: 25px;
+}
+.a button{
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgba(30, 205, 232, 0.694);
+}
+.a button:hover{
+    background-color: yellow;
+}
+.b{
+    position: relative;
+    left: 150px;
+    font-size: 90px;
+    padding: 25px;
+}
+.b button{
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgba(30, 205, 232, 0.694);
+}
+.b button:hover{
+    background-color: yellow;
+}
+
+.c{
+    position: relative;
+    left: 150px;
+    font-size: 90px;
+    padding: 25px;
+
+}
+.c button{
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgba(30, 205, 232, 0.694);
+}
+.c button:hover{
+    background-color: yellow;
+}
+.d{
+    position: relative;
+    left: 150px;
+    font-size: 90px;
+    padding: 25px;
+
+}
+.d button{
+    color: black;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 50px;
+    background-color: rgba(30, 205, 232, 0.694);
+}
+.d button:hover{
+    background-color: yellow;
+}
