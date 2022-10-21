@@ -10,10 +10,46 @@
 	</title>
 
 	<style>
+		.left{
+			
+			position: absolute;
+			left: 40px;
+			top: 20px;
+			display: inline-block;
+			border-radius: 10px;
+
+		}
+		.left img{
+			width: 140px;
+			margin: auto;
+		}
+		.left div{
+			text-align: center;
+			font-size: 25px;
+		}
+	
+        .container{
+			background-color:  #924eaa;
+            border: 2px solid black;
+			position: absolute;
+            border-radius: 20px;
+			width: 40%;
+			right: 380px;
+			margin: 20px;
+			padding: 20px;
+			
+			
+        }
 		body {
 			background-color: #05c46b;
 			font-family: Verdana;
 			text-align: center;
+            font-family: 'Baloo Bhai', cursive;
+			background: url('');
+			background-color: whitesmoke;
+            
+            
+
 		}
         body h1{
             font-size: 40px;
@@ -25,7 +61,7 @@
 			margin-bottom: 25px;
 		}
 		.form-control label {
-			display: block;
+			display:inline-block ;
 			margin-bottom: 10px;
 		}
 
@@ -33,11 +69,12 @@
 		.form-control select,
 		.form-control textarea {
 			border: 1px solid #777;
-			border-radius: 2px;
+			border-radius: 10px;
 			font-family: inherit;
 			padding: 10px;
 			display: block;
 			width: 95%;
+            display: inline-block;
 		}
 
 		.form-control input[type="radio"],
@@ -47,12 +84,24 @@
 		}
 
 		button {
-			background-color: #a1e228;
-			font-family: inherit;
-            font-size: 30px;
+			font-family: 'Baloo Bhai', cursive;
+			font-size: 30px;
 			margin-top: 50px;
 			margin-bottom: 20px;
             padding: 10px;
+			background: transparent;
+			border-style: solid;
+			animation: rotate 2s infinite;
+			color: blueviolet;
+			border-radius: 10px;
+		}
+		@keyframes rotate{
+			50%{
+				border-color: #3454c9 #ed0eed;
+			}
+			100%{
+				border-color:  #ed0eed  #ed0eed;
+			}
 		}
         button:hover{
             background-color: aqua;
@@ -60,19 +109,31 @@
         }
 	</style>
 </head>
+<link rel="stylesheet" href=   " https://fonts.google.com/specimen/Baloo+Thambi+2?query=baloo"> 
 
 <body>
+	<header class="header">
+	<!-- for left content -->
+	<div class="left">
+		<img src="Axis Logo.png" alt="">
+		<div><strong>AXIS COLLEGES</strong></div>
+	   </div>
+	</header>
 	<h1>DEFAULTERS FEEDBACK FORM</h1>
+    <header class="container">
+
+    
 	<form id="form"></form>
 		<div class="form-control">
-			<label for="name" id="label-name">Name</label>
+			<label for="name" id="label-name"><strong>
+                Name</strong></label>
 
 			<!-- Input Type Text -->
 			<input type="text" id="name" placeholder="Enter your name" />
 		</div>
 
 		<div class="form-control">
-			<label for="email" id="label-email">Email</label>
+			<label for="email" id="label-email"><strong>Email</strong></label>
 
 			<!-- Input Type Email-->
 			<input type="email" id="email" placeholder="Enter your email" />
@@ -81,7 +142,7 @@
 
 		<div class="form-control">
 			<label for="role" id="label-role">
-				Which option best describes you?
+				<strong>Which option best describes you?</strong>
 			</label>
 			
 			<!-- Dropdown options -->
@@ -95,11 +156,11 @@
 
 		<div class="form-control">
 			<label>
-				Did you like this Project?
+				<strong> Do you like this Project?</strong>
 			</label>
 
 			<label for="recommed-1">
-				<input type="radio" id="recommed-1" name="recommed">Yes</input>
+				<input type="radio" id="recommed-1" name="recommed">Yes </input>
 			</label>
 			<label for="recommed-2">
 				<input type="radio" id="recommed-2" name="recommed">No</input>
@@ -111,7 +172,7 @@
 
 		<div class="form-control">
 			<label for="comment">
-				Any comments or suggestions
+				<strong> comments or suggestions </strong>
 			</label>
 
 			<textarea name="comment" id="comment"
@@ -123,6 +184,7 @@
 			<a href="/htmlpages/thankyou.html"> Submit</a>
 		</button>
 	</form>
+</header>
 </body>
 
 </html>
