@@ -1,40 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About</title>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content=
+		"width=device-width, initial-scale=1.0">
+	<title>
+		Feedback form
+	</title>
+
+	<style>
+		body {
+			background-color: #05c46b;
+			font-family: Verdana;
+			text-align: center;
+		}
+        body h1{
+            font-size: 40px;
+            text-decoration: underline;
+        }
+
+		.form-control {
+			text-align: left;
+			margin-bottom: 25px;
+		}
+		.form-control label {
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		.form-control input,
+		.form-control select,
+		.form-control textarea {
+			border: 1px solid #777;
+			border-radius: 2px;
+			font-family: inherit;
+			padding: 10px;
+			display: block;
+			width: 95%;
+		}
+
+		.form-control input[type="radio"],
+		.form-control input[type="checkbox"] {
+			display: inline-block;
+			width: auto;
+		}
+
+		button {
+			background-color: #a1e228;
+			font-family: inherit;
+            font-size: 30px;
+			margin-top: 50px;
+			margin-bottom: 20px;
+            padding: 10px;
+		}
+        button:hover{
+            background-color: aqua;
+            top: 20px;
+        }
+	</style>
 </head>
-<link rel="stylesheet" href="css/style.css">
-<style>
-    body{
-        background-color: aqua;
-    }
-    .team h2{
-        font-size: 60px;
-        font-style: bold;
-        text-decoration: underline;
-        font-weight: 500;
-        text-align: center;
 
-    }
-    .a p{
-        font-size: 30px;
-    }
-
-</style>
 <body>
-    
-    <div class="team">
-    <h2>DEFAULTERS</h2>
-    </div>
-    <div class="a">
-        <p>
-            Team "DEFAULTERS" is a team of 7 members who worked together to make a project on ATTENDANCE MANAGEMENT, under the guidance of our teacher "Mr. Chandan Verma". 
-            The Team Members are Devanshu Singh,Md.Sohail Ansari, Nishant Singh, Ashutosh Bhadauriya, Vaibhav Srivastava, Abhinav Mishra, Mayurakshi Khanang of Btech(CSE/AIML) III year.
+	<h1>DEFAULTERS FEEDBACK FORM</h1>
+	<form id="form"></form>
+		<div class="form-control">
+			<label for="name" id="label-name">Name</label>
 
-        </p>
-    </div>
+			<!-- Input Type Text -->
+			<input type="text" id="name" placeholder="Enter your name" />
+		</div>
+
+		<div class="form-control">
+			<label for="email" id="label-email">Email</label>
+
+			<!-- Input Type Email-->
+			<input type="email" id="email" placeholder="Enter your email" />
+		</div>
+
+
+		<div class="form-control">
+			<label for="role" id="label-role">
+				Which option best describes you?
+			</label>
+			
+			<!-- Dropdown options -->
+			<select name="role" id="role">
+				<option value="student">Student</option>
+				<option value="faculty">Faculty</option>
+				<option value="Director">Director</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+
+		<div class="form-control">
+			<label>
+				Did you like this Project?
+			</label>
+
+			<label for="recommed-1">
+				<input type="radio" id="recommed-1" name="recommed">Yes</input>
+			</label>
+			<label for="recommed-2">
+				<input type="radio" id="recommed-2" name="recommed">No</input>
+			</label>
+			<label for="recommed-3">
+				<input type="radio"	id="recommed-3" name="recommed">Maybe</input>
+			</label>
+		</div>
+
+		<div class="form-control">
+			<label for="comment">
+				Any comments or suggestions
+			</label>
+
+			<textarea name="comment" id="comment"
+				placeholder="Enter your comment here">
+			</textarea>
+		</div>
+
+		<button type="submit" value="submit">
+			<a href="/htmlpages/thankyou.html"> Submit</a>
+		</button>
+	</form>
 </body>
+
 </html>
